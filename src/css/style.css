@@ -1,0 +1,346 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f0f3f7;
+}
+
+a {
+  color: black;
+}
+
+.main {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.main .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding-top: 16px;
+}
+
+.header .header-logo {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo h1 {
+  padding-left: 10px;
+  font-family: "Monda", sans-serif;
+  font-weight: normal;
+}
+
+.header-nav li {
+  float: left;
+  margin: 0 8px;
+}
+
+.header-nav a {
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.header-nav a:hover {
+  color: rgb(0, 121, 219);
+}
+
+.content .info {
+  display: flex;
+  height: 700px;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.content .picture {
+  width: 70%;
+}
+
+.content .info p {
+  color: #999;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.content .picture span {
+  font-size: 120px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-image: url(https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80);
+  background-size: contain;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.content .information {
+  width: 30%;
+}
+
+.content .information::before {
+  border: 6px solid green;
+  height: 500px;
+}
+
+.content .information .item {
+  margin: 40px;
+}
+
+.content .information h2 {
+  font-size: 60px;
+}
+
+.show-project {
+  position: relative;
+  padding-top: 100px;
+}
+
+.show-project .show-down {
+  background-color: black;
+  color: white;
+  height: 700px;
+  width: 100%;
+  display: flex;
+}
+
+.show-project .show-down .title {
+  margin: 560px 60px 0 80px;
+}
+.show-project .show-down .title h1 {
+  margin-bottom: 20px;
+}
+
+.show-project .show-down .title p {
+  color: rgb(222, 222, 222);
+}
+.show-project .show-down .project-list {
+  margin: 560px 0 0;
+  display: flex;
+}
+
+.project-list .item-project:first-child {
+  margin-left: 80px;
+}
+
+.project-list .item-project {
+  margin-left: 120px;
+}
+
+.show-project .show-down .project-list h2 a {
+  color: white;
+}
+.show-project .show-down .project-list h4 {
+  font-weight: normal;
+  margin: 12px 0;
+}
+
+.show-project .show-up {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: white;
+  padding: 50px 100px;
+}
+
+.show-up .sub {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.show-up img {
+  height: 400px;
+  width: 320px;
+  object-fit: cover;
+}
+.show-up p {
+  margin-left: 24px;
+  font-size: 20px;
+  line-height: 2.5;
+  letter-spacing: 1.2px;
+}
+
+.show-up a {
+  float: right;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  margin-bottom: 60px;
+}
+
+.slider {
+  height: 650px;
+  width: 100%;
+  padding-top: 120px;
+  display: flex;
+  gap: 150px;
+}
+
+.slider .black {
+  height: 100%;
+  width: 120px;
+  background-color: black;
+}
+
+.slider .img-slider {
+  height: 100%;
+  width: 350px;
+}
+
+.slider .img-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider .title {
+  height: 100%;
+  width: 400px;
+}
+
+.slider .title h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: 1.4px;
+  margin-bottom: 40px;
+}
+
+.slider .title a {
+  float: right;
+}
+
+.slider .title a:hover {
+  color: rgb(0, 121, 219);
+}
+
+.slider .title p {
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 1.4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.footer {
+  margin-top: 120px;
+  height: 850px;
+  background-color: rgb(62 76 98);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-text {
+  width: 100%;
+  height: 200px;
+  padding: 60px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.friend-list {
+  height: 550px;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.friend-item {
+  height: 100%;
+  width: calc(100% / 3 - 20px);
+  background-color: #b1d0e2;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  justify-content: space-evenly;
+  box-shadow: rgba(110, 110, 133, 0.5) 0px 7px 29px 8px;
+  border-radius: 5px;
+}
+
+.friend-item:nth-child(2) {
+  background-color: #f0f3f7;
+}
+
+.friend-thing {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1.6px;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.friend-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.friend-item .friend-name {
+  font-size: 34px;
+  font-weight: bolder;
+}
+
+.friend-item .friend-job {
+  font-size: 20px;
+}
+
+.main .footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  color: white;
+}
+
+.footer-nav .logo {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav .logo h1 {
+  padding-left: 10px;
+  font-family: "Monda", sans-serif;
+  font-weight: normal;
+}
+
+.footer-nav .nav {
+  margin-right: 200px;
+}
+
+.footer-nav .nav li {
+  float: left;
+  margin: 0 8px;
+}
+
+.footer-nav .nav a {
+  padding: 15px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.footer-nav .nav a:hover {
+  color: rgb(0, 121, 219);
+}
